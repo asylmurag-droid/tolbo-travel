@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="mn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tolbo Travel — аялал, соёл, Монгол Алтайн нутгийн туршлага.">
+<meta name="theme-color" content="#07394c">
+<title>Tolbo Travel | Зочны бүртгэл</title>
+<style>
+:root{--navy:#07394c;--teal:#087f8c;--gold:#e8b64b;--ink:#17282e;--muted:#63747a;--paper:#f6f5ef;--white:#fff;--line:#dfe5e1}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,"Noto Sans",sans-serif;line-height:1.65}a{color:inherit}.wrap{width:min(1200px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:9px 0}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}.brand img{width:68px;height:60px;object-fit:contain}.brand strong{display:block;color:var(--navy);letter-spacing:.13em;font-size:1rem}.brand small{display:block;color:var(--muted);font-size:.65rem;letter-spacing:.15em}
+nav{display:flex;align-items:center;justify-content:flex-end;gap:15px;flex-wrap:wrap}nav a{text-decoration:none;font-size:.81rem;font-weight:700;color:#263b42;white-space:nowrap}nav a:hover{color:var(--teal)}.lang{border:1px solid #b7c6c8;background:white;color:var(--navy);border-radius:5px;padding:8px 11px;font-weight:800;cursor:pointer}.menu-toggle{display:none;border:1px solid var(--line);background:white;border-radius:7px;padding:8px 10px}
+.hero{min-height:620px;display:flex;align-items:center;color:white;background:linear-gradient(90deg,rgba(3,25,37,.83),rgba(3,25,37,.16)),url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2200&q=90') center/cover}.hero-content{padding:95px 0;max-width:780px}.eyebrow{font-size:.75rem;text-transform:uppercase;letter-spacing:.19em;font-weight:800;color:var(--gold)}h1,h2,h3{line-height:1.13;font-family:Georgia,"Times New Roman",serif}h1{font-size:clamp(2.8rem,6.5vw,5.6rem);letter-spacing:-.045em;margin:16px 0 22px}h2{font-size:clamp(2.1rem,4vw,3.35rem);margin:12px 0 20px}h3{font-size:1.5rem;margin:10px 0}.hero p{max-width:620px;color:#edf4f3;font-size:1.12rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;background:var(--gold);color:#17282e;text-decoration:none;border:0;border-radius:4px;padding:13px 19px;font-weight:800;cursor:pointer}.btn:disabled{opacity:.65;cursor:wait}.btn.ghost{background:transparent;color:white;border:1px solid #ffffffb8}.btn.dark{background:var(--navy);color:white}
+section{padding:82px 0}.section-head{max-width:760px;margin-bottom:32px}.section-head p,.muted{color:var(--muted)}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}.panel{background:white;border:1px solid var(--line);border-radius:10px;padding:30px;box-shadow:0 12px 34px #122b3210}.tag{display:inline-block;border-radius:30px;background:#e7f1ef;color:var(--navy);font-size:.75rem;font-weight:800;padding:5px 11px}.band{background:#e9eee9}.dark-band{background:var(--navy);color:white}.dark-band .muted{color:#d1e0e1}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{overflow:hidden;background:white;border:1px solid var(--line);border-radius:10px;box-shadow:0 12px 30px #122b320b}.card img{width:100%;height:210px;display:block;object-fit:cover}.card-body{padding:23px}.card p{color:var(--muted);font-size:.95rem}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}label{font-size:.87rem;font-weight:700}input,select,textarea{width:100%;font:inherit;padding:12px;border:1px solid #c9d4d1;border-radius:5px;background:white}textarea{min-height:105px;resize:vertical}.notice{background:#fff7e4;border-left:4px solid var(--gold);padding:13px 15px;color:#5d4a1f;font-size:.87rem}.contact-links{display:grid;gap:12px;margin-top:22px}.contact-link{display:flex;align-items:center;gap:12px;text-decoration:none;background:#f4f6f2;border:1px solid var(--line);border-radius:7px;padding:14px}.contact-link strong{display:block;color:var(--navy)}.contact-link span{font-size:.9rem;color:var(--muted)}footer{background:#062c3b;color:#dce7e8;padding:30px 0}.footer-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer-links{display:flex;gap:14px;flex-wrap:wrap}.footer-links a{font-size:.83rem;color:#dce7e8;text-decoration:none}
+@media(max-width:1100px){nav{gap:10px}nav a{font-size:.75rem}.brand img{width:55px;height:52px}.brand strong{font-size:.9rem}}
+@media(max-width:850px){.nav{flex-wrap:wrap}.menu-toggle{display:block}nav{display:none;width:100%;align-items:stretch;flex-direction:column;gap:0;padding:6px 0 12px}nav.open{display:flex}nav a{padding:10px 3px;border-top:1px solid var(--line);font-size:.9rem}.lang{align-self:flex-start;margin-top:8px}.hero{min-height:540px}.two-col,.cards{grid-template-columns:1fr}section{padding:60px 0}.card img{height:230px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}}
+
+/* Modular tour builder */
+.tour-builder{margin-top:30px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(18px,3vw,30px);box-shadow:0 12px 30px #122b320b}
+.module-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.module-option{display:flex;gap:12px;padding:14px;border:1px solid var(--line);border-radius:8px;background:#fff;cursor:pointer}
+.module-option:has(input:checked){border-color:var(--teal);background:#eff8f6}
+.module-option input{width:19px;flex:0 0 auto;margin-top:4px;accent-color:var(--teal)}
+.module-option strong{display:block;color:var(--navy);line-height:1.35}.module-option small{display:block;color:var(--muted);margin-top:5px}
+.builder-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px}
+.builder-result{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px;padding:18px;background:#f2f6f2;border-radius:8px}
+.builder-result strong{display:block;font-size:1.45rem;color:var(--navy)}
+.builder-note{font-size:.86rem;color:var(--muted);margin-top:12px}
+.special-pack{margin-top:20px;padding:20px;border:1px solid #e8d49b;border-radius:9px;background:#fff9e9}
+@media(max-width:850px){.module-grid,.builder-controls,.builder-result{grid-template-columns:1fr}}
+
+</style>
+</head>
+<body><header><div class="wrap nav">
+<a class="brand" href="index.html"><img src="assets/tolbo-travel-logo.png" alt="Tolbo Travel лого"><span><strong>TOLBO TRAVEL</strong><small>АЛТАЙГ НУТГИЙН НҮДЭЭР</small></span></a>
+<button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Цэс ☰</button>
+<nav id="mainNav" aria-label="Үндсэн цэс">
+<a href="index.html" data-mn="Нүүр" data-en="Home">Нүүр</a><a href="tours.html" data-mn="Аяллууд" data-en="Our Tours">Аяллууд</a><a href="visitor-form.html" data-mn="Зочны бүртгэл" data-en="Visitor Registration">Зочны бүртгэл</a><a href="gallery.html" data-mn="Зургийн цомог" data-en="Gallery">Зургийн цомог</a><a href="asylmura.html" data-mn="Асылмура" data-en="Asylmura">Асылмура</a><a href="eagle-clan.html" data-mn="Бүргэд овог" data-en="Eagle Clan">Бүргэд овог</a><a href="index.html#about" data-mn="Бидний тухай" data-en="About Us">Бидний тухай</a><a href="index.html#contact" data-mn="Холбоо барих" data-en="Contact">Холбоо барих</a><button class="lang" id="langBtn" type="button" aria-label="Switch language">EN</button></nav></div></header><main><section id="visitor-form" class="band"><div class="wrap two-col"><div><div class="eyebrow" data-mn="Зочны бүртгэл" data-en="Visitor Registration">Зочны бүртгэл</div><h2 data-mn="Tolbo Travel-тай холбоотой байгаарай" data-en="Stay in touch with Tolbo Travel">Tolbo Travel-тай холбоотой байгаарай</h2><p data-mn="Та аялал, нутгийн соёл, Asylmura бүтээгдэхүүн эсвэл хамтын ажиллагааны талаар сонирхож байвал холбоо барих мэдээллээ үлдээнэ үү." data-en="Leave your contact details and tell us whether you are interested in tours, local culture, Asylmura products, or a partnership.">Та аялал, нутгийн соёл, Asylmura бүтээгдэхүүн эсвэл хамтын ажиллагааны талаар сонирхож байвал холбоо барих мэдээллээ үлдээнэ үү.</p><div class="notice" data-mn="Таны илгээсэн мэдээлэл холбоо барих зорилгоор Tolbo Travel-ийн бүртгэлд хадгалагдана. Зөвхөн шаардлагатай мэдээллийг оруулна уу." data-en="Your submitted details are stored in Tolbo Travel's visitor records so the team can contact you. Please provide only information you wish to share.">Таны илгээсэн мэдээлэл холбоо барих зорилгоор Tolbo Travel-ийн бүртгэлд хадгалагдана. Зөвхөн шаардлагатай мэдээллийг оруулна уу.</div></div>
+<form class="panel" id="visitorForm">
+<div class="form-grid">
+<div class="field"><label for="fullName" data-mn="Овог нэр *" data-en="Full name *">Овог нэр *</label><input id="fullName" name="fullName" required maxlength="160" autocomplete="name" placeholder="Нэрээ бичнэ үү"></div>
+<div class="field"><label for="email" data-mn="И-мэйл *" data-en="Email *">И-мэйл *</label><input id="email" name="email" type="email" required maxlength="254" autocomplete="email" placeholder="you@example.com"></div>
+<div class="field"><label for="phone" data-mn="Утас / WhatsApp" data-en="Phone / WhatsApp">Утас / WhatsApp</label><input id="phone" name="phone" type="tel" maxlength="60" autocomplete="tel" placeholder="+976 ..."></div>
+<div class="field"><label for="country" data-mn="Улс" data-en="Country">Улс</label><select id="country" name="country" required autocomplete="country-name"><option value="Mongolia" selected>Mongolia — Монгол Улс</option></select></div>
+<div class="field"><label for="company" data-mn="Байгууллага (заавал биш)" data-en="Company / Organization (optional)">Байгууллага (заавал биш)</label><input id="company" name="company" maxlength="160" autocomplete="organization" placeholder="Company or organization"></div>
+<div class="field"><label for="facebook" data-mn="Facebook хаяг (заавал биш)" data-en="Facebook profile (optional)">Facebook хаяг (заавал биш)</label><input id="facebook" name="facebook" maxlength="300" type="text" placeholder="https://facebook.com/your-profile"></div>
+<div class="field full"><label for="interest" data-mn="Юу сонирхож байна вэ?" data-en="I'm interested in">Юу сонирхож байна вэ?</label><select id="interest" name="interest"><option value="Local tours" data-mn="Орон нутгийн аялал" data-en="Local tours">Орон нутгийн аялал</option><option value="Kazakh culture and family visits" data-mn="Казах соёл, айлд зочлох" data-en="Kazakh culture and family visits">Казах соёл, айлд зочлох</option><option value="Asylmura handicrafts" data-mn="Asylmura гар урлал" data-en="Asylmura handicrafts">Asylmura гар урлал</option><option value="Business partnership" data-mn="Бизнесийн хамтын ажиллагаа" data-en="Business partnership">Бизнесийн хамтын ажиллагаа</option><option value="Other" data-mn="Бусад" data-en="Other">Бусад</option></select></div>
+<div class="field full"><label for="message" data-mn="Нэмэлт зурвас" data-en="Message (optional)">Нэмэлт зурвас</label><textarea id="message" name="message" maxlength="3000" placeholder="Нэмэлт мэдээлэл бичнэ үү"></textarea></div>
+<div class="field full"><button class="btn dark" type="submit" data-mn="Сонирхлоо илгээх" data-en="Submit interest">Сонирхлоо илгээх</button><p class="muted" id="formMessage" aria-live="polite" data-mn="* тэмдэгтэй талбарууд заавал бөглөнө." data-en="Fields marked * are required.">* тэмдэгтэй талбарууд заавал бөглөнө.</p></div>
+</div></form></div></section></main><footer><div class="wrap footer-row"><span>© <span id="year"></span> Tolbo Travel</span><div class="footer-links"><a href="tours.html">Tours</a><a href="visitor-form.html">Visitor Registration</a><a href="gallery.html">Gallery</a><a href="asylmura.html">Asylmura</a><a href="eagle-clan.html">Eagle Clan</a></div></div></footer><script>
+let lang='mn';const langBtn=document.getElementById('langBtn');
+function setLang(next){lang=next;document.documentElement.lang=lang;document.querySelectorAll('[data-mn][data-en]').forEach(el=>{el.textContent=el.dataset[lang]});const toggle=document.getElementById('menuToggle');if(toggle)toggle.textContent=lang==='mn'?'Цэс ☰':'Menu ☰';if(langBtn)langBtn.textContent=lang==='mn'?'EN':'MN';const title=document.querySelector('meta[name="page-title-en"]');document.title=lang==='mn'?'Tolbo Travel | Алтайг нутгийн хүний нүдээр':'Tolbo Travel | Discover the Altai';}
+if(langBtn)langBtn.addEventListener('click',()=>setLang(lang==='mn'?'en':'mn'));
+const toggle=document.getElementById('menuToggle'),navEl=document.getElementById('mainNav');if(toggle&&navEl){toggle.addEventListener('click',()=>{const open=navEl.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});navEl.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navEl.classList.remove('open');toggle.setAttribute('aria-expanded','false');}));}
+const year=document.getElementById('year');if(year)year.textContent=new Date().getFullYear();
+</script><script>const qp=new URLSearchParams(location.search);if(qp.has('interest'))document.getElementById('interest').value=qp.get('interest');if(qp.has('message'))document.getElementById('message').value=qp.get('message');</script><script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/13.0.0/firebase-app.js";
+import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/13.0.0/firebase-firestore.js";
+const firebaseConfig = {
+  apiKey: "AIzaSyCDVwvAWmmYwjAYR2vuQv9qBbBg7k3VdCE",
+  authDomain: "tolbotravel.firebaseapp.com",
+  projectId: "tolbotravel",
+  storageBucket: "tolbotravel.firebasestorage.app",
+  messagingSenderId: "742953591178",
+  appId: "1:742953591178:web:ecfe42723d7d9ca733e873"
+};
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const visitorForm = document.getElementById('visitorForm');
+const formMessage = document.getElementById('formMessage');
+visitorForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const submit = visitorForm.querySelector('button[type="submit"]');
+  submit.disabled = true;
+  formMessage.textContent = lang === 'mn' ? 'Илгээж байна…' : 'Sending…';
+  try {
+    await addDoc(collection(db, 'visitors'), {
+      fullName: document.getElementById('fullName').value.trim(),
+      email: document.getElementById('email').value.trim(),
+      phone: document.getElementById('phone').value.trim(),
+      country: document.getElementById('country').value,
+      company: document.getElementById('company').value.trim(),
+      facebook: document.getElementById('facebook').value.trim(),
+      interest: document.getElementById('interest').value,
+      message: document.getElementById('message').value.trim(),
+      createdAt: serverTimestamp(),
+      priority: 2, contactStatus: 'New', adminNote: '',
+      viewStatus: 'new', viewedAt: null
+    });
+    visitorForm.reset();
+    document.getElementById('country').value = 'Mongolia';
+    formMessage.textContent = lang === 'mn' ? 'Амжилттай илгээгдлээ. Баярлалаа!' : 'Submitted successfully. Thank you!';
+  } catch (err) {
+    console.error('Visitor submission failed:', err);
+    formMessage.textContent = lang === 'mn' ? 'Илгээж чадсангүй. Дахин оролдоно уу.' : 'Could not submit. Please try again.';
+  } finally { submit.disabled = false; }
+});
+</script></body></html>

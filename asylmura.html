@@ -1,0 +1,202 @@
+<!doctype html>
+
+<html lang="mn">
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="Tolbo Travel — аялал, соёл, Монгол Алтайн нутгийн туршлага.">
+
+<meta name="theme-color" content="#07394c">
+
+<title>Asylmura | Traditional Kazakh Handicrafts — Tolbo Travel</title>
+
+<style>
+
+:root{--navy:#07394c;--teal:#087f8c;--gold:#e8b64b;--ink:#17282e;--muted:#63747a;--paper:#f6f5ef;--white:#fff;--line:#dfe5e1}
+
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,"Noto Sans",sans-serif;line-height:1.65}a{color:inherit}.wrap{width:min(1200px,92%);margin:auto}
+
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:9px 0}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}.brand img{width:68px;height:60px;object-fit:contain}.brand strong{display:block;color:var(--navy);letter-spacing:.13em;font-size:1rem}.brand small{display:block;color:var(--muted);font-size:.65rem;letter-spacing:.15em}
+
+nav{display:flex;align-items:center;justify-content:flex-end;gap:15px;flex-wrap:wrap}nav a{text-decoration:none;font-size:.81rem;font-weight:700;color:#263b42;white-space:nowrap}nav a:hover{color:var(--teal)}.lang{border:1px solid #b7c6c8;background:white;color:var(--navy);border-radius:5px;padding:8px 11px;font-weight:800;cursor:pointer}.menu-toggle{display:none;border:1px solid var(--line);background:white;border-radius:7px;padding:8px 10px}
+
+.hero{min-height:620px;display:flex;align-items:center;color:white;background:linear-gradient(90deg,rgba(3,25,37,.83),rgba(3,25,37,.16)),url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2200&q=90') center/cover}.hero-content{padding:95px 0;max-width:780px}.eyebrow{font-size:.75rem;text-transform:uppercase;letter-spacing:.19em;font-weight:800;color:var(--gold)}h1,h2,h3{line-height:1.13;font-family:Georgia,"Times New Roman",serif}h1{font-size:clamp(2.8rem,6.5vw,5.6rem);letter-spacing:-.045em;margin:16px 0 22px}h2{font-size:clamp(2.1rem,4vw,3.35rem);margin:12px 0 20px}h3{font-size:1.5rem;margin:10px 0}.hero p{max-width:620px;color:#edf4f3;font-size:1.12rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;background:var(--gold);color:#17282e;text-decoration:none;border:0;border-radius:4px;padding:13px 19px;font-weight:800;cursor:pointer}.btn:disabled{opacity:.65;cursor:wait}.btn.ghost{background:transparent;color:white;border:1px solid #ffffffb8}.btn.dark{background:var(--navy);color:white}
+
+section{padding:82px 0}.section-head{max-width:760px;margin-bottom:32px}.section-head p,.muted{color:var(--muted)}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}.panel{background:white;border:1px solid var(--line);border-radius:10px;padding:30px;box-shadow:0 12px 34px #122b3210}.tag{display:inline-block;border-radius:30px;background:#e7f1ef;color:var(--navy);font-size:.75rem;font-weight:800;padding:5px 11px}.band{background:#e9eee9}.dark-band{background:var(--navy);color:white}.dark-band .muted{color:#d1e0e1}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{overflow:hidden;background:white;border:1px solid var(--line);border-radius:10px;box-shadow:0 12px 30px #122b320b}.card img{width:100%;height:210px;display:block;object-fit:cover}.card-body{padding:23px}.card p{color:var(--muted);font-size:.95rem}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}label{font-size:.87rem;font-weight:700}input,select,textarea{width:100%;font:inherit;padding:12px;border:1px solid #c9d4d1;border-radius:5px;background:white}textarea{min-height:105px;resize:vertical}.notice{background:#fff7e4;border-left:4px solid var(--gold);padding:13px 15px;color:#5d4a1f;font-size:.87rem}.contact-links{display:grid;gap:12px;margin-top:22px}.contact-link{display:flex;align-items:center;gap:12px;text-decoration:none;background:#f4f6f2;border:1px solid var(--line);border-radius:7px;padding:14px}.contact-link strong{display:block;color:var(--navy)}.contact-link span{font-size:.9rem;color:var(--muted)}footer{background:#062c3b;color:#dce7e8;padding:30px 0}.footer-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer-links{display:flex;gap:14px;flex-wrap:wrap}.footer-links a{font-size:.83rem;color:#dce7e8;text-decoration:none}
+
+@media(max-width:1100px){nav{gap:10px}nav a{font-size:.75rem}.brand img{width:55px;height:52px}.brand strong{font-size:.9rem}}
+
+@media(max-width:850px){.nav{flex-wrap:wrap}.menu-toggle{display:block}nav{display:none;width:100%;align-items:stretch;flex-direction:column;gap:0;padding:6px 0 12px}nav.open{display:flex}nav a{padding:10px 3px;border-top:1px solid var(--line);font-size:.9rem}.lang{align-self:flex-start;margin-top:8px}.hero{min-height:540px}.two-col,.cards{grid-template-columns:1fr}section{padding:60px 0}.card img{height:230px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}}
+
+
+
+/* Modular tour builder */
+
+.tour-builder{margin-top:30px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(18px,3vw,30px);box-shadow:0 12px 30px #122b320b}
+
+.module-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+
+.module-option{display:flex;gap:12px;padding:14px;border:1px solid var(--line);border-radius:8px;background:#fff;cursor:pointer}
+
+.module-option:has(input:checked){border-color:var(--teal);background:#eff8f6}
+
+.module-option input{width:19px;flex:0 0 auto;margin-top:4px;accent-color:var(--teal)}
+
+.module-option strong{display:block;color:var(--navy);line-height:1.35}.module-option small{display:block;color:var(--muted);margin-top:5px}
+
+.builder-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px}
+
+.builder-result{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px;padding:18px;background:#f2f6f2;border-radius:8px}
+
+.builder-result strong{display:block;font-size:1.45rem;color:var(--navy)}
+
+.builder-note{font-size:.86rem;color:var(--muted);margin-top:12px}
+
+.special-pack{margin-top:20px;padding:20px;border:1px solid #e8d49b;border-radius:9px;background:#fff9e9}
+
+@media(max-width:850px){.module-grid,.builder-controls,.builder-result{grid-template-columns:1fr}}
+
+
+
+
+/* Asylmura brand story and gallery */
+.brand-intro{max-width:760px}
+.brand-intro .lead{font-size:1.08rem;color:#e5eff0}
+.trust-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+.trust-item{padding:17px;background:#ffffff12;border:1px solid #ffffff30;border-radius:8px}
+.trust-item strong{display:block;color:var(--gold);font-size:1.25rem}
+.trust-item span{font-size:.86rem;color:#e1ebed}
+.product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.product-card{overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:0 12px 30px #122b320b}
+.product-card img{width:100%;height:250px;display:block;object-fit:cover}
+.product-card .card-body{padding:18px 20px}
+.product-card h3{font-size:1.25rem}
+.social-panel{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.social-panel p{max-width:700px}
+@media(max-width:850px){.trust-row,.product-grid{grid-template-columns:1fr}.product-card img{height:260px}}
+
+</style>
+
+</head>
+
+<body><header><div class="wrap nav">
+
+<a class="brand" href="index.html"><img src="assets/tolbo-travel-logo.png" alt="Tolbo Travel лого"><span><strong>TOLBO TRAVEL</strong><small>АЛТАЙГ НУТГИЙН НҮДЭЭР</small></span></a>
+
+<button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Цэс ☰</button>
+
+<nav id="mainNav" aria-label="Үндсэн цэс">
+<a href="tours.html" data-mn="Аяллууд" data-en="Our Tours">Аяллууд</a>
+<a href="visitor-form.html" data-mn="Зочны бүртгэл" data-en="Visitor Registration">Зочны бүртгэл</a>
+<a href="our-team.html" data-mn="Манай мэргэжилтнүүд" data-en="Our Experts">Манай мэргэжилтнүүд</a>
+<a href="asylmura.html" data-mn="Асылмура" data-en="Asylmura">Асылмура</a>
+<a href="eagle-clan.html" data-mn="Бүргэд овог" data-en="Eagle Clan">Бүргэд овог</a>
+<a href="contact.html" data-mn="Холбоо барих" data-en="Contact Us">Холбоо барих</a>
+<button class="lang" id="langBtn" type="button" aria-label="Switch language">EN</button></nav></div></header><main>
+<section id="asylmura" class="dark-band">
+  <div class="wrap two-col">
+    <div class="brand-intro">
+      <div class="eyebrow" data-mn="2007 оноос · Монгол Алтай" data-en="Since 2007 · Mongolian Altai">2007 оноос · Монгол Алтай</div>
+      <h2>Asylmura</h2>
+      <p class="lead" data-mn="Асылмура нь Монгол дахь Казах үндэстний уламжлалт хатгамал, гар урлал, соёлын өвийг түгээн дэлгэрүүлдэг брэнд юм. 2007 оноос хуримтлуулсан туршлагаараа бүтээгдэхүүн, урлалын уламжлалаа олон нийт болон аялал жуулчлалын салбарынханд танилцуулж ирсэн." data-en="Asylmura is a Mongolian brand sharing traditional Kazakh embroidery, handicrafts, and cultural heritage. Since 2007, it has built experience presenting its craft and products to the public and tourism partners.">Асылмура нь Монгол дахь Казах үндэстний уламжлалт хатгамал, гар урлал, соёлын өвийг түгээн дэлгэрүүлдэг брэнд юм. 2007 оноос хуримтлуулсан туршлагаараа бүтээгдэхүүн, урлалын уламжлалаа олон нийт болон аялал жуулчлалын салбарынханд танилцуулж ирсэн.</p>
+      <div class="actions">
+        <a class="btn" href="#asylmura-products" data-mn="Бүтээгдэхүүн үзэх" data-en="Explore Products">Бүтээгдэхүүн үзэх</a>
+        <a class="btn ghost" href="https://www.facebook.com/profile.php?id=100076219691285" target="_blank" rel="noopener noreferrer" data-mn="Facebook хуудас" data-en="Facebook Page">Facebook хуудас</a>
+      </div>
+      <div class="trust-row">
+        <div class="trust-item"><strong>2007</strong><span data-mn="оноос хойших туршлага" data-en="experience since">оноос хойших туршлага</span></div>
+        <div class="trust-item"><strong>9.4K</strong><span data-mn="Facebook дагагч" data-en="Facebook followers">Facebook дагагч</span></div>
+        <div class="trust-item"><strong>Казах</strong><span data-mn="уламжлалт гар урлал" data-en="traditional craftsmanship">уламжлалт гар урлал</span></div>
+      </div>
+    </div>
+    <div class="panel" style="padding:0;overflow:hidden">
+      <img src="assets/asylmura/asylmura (3).jpg" alt="Asylmura уламжлалт хатгамалтай орны хэрэглэл" style="display:block;width:100%;height:100%;min-height:340px;max-height:470px;object-fit:cover">
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="gulmaira-asylmura">
+  <div class="wrap two-col" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:36px;align-items:center">
+    <div>
+      <span class="tag" data-mn="Үүсгэн байгуулагч · Уран бүтээлч" data-en="Co-founder · Artist">Үүсгэн байгуулагч · Уран бүтээлч</span>
+      <h2 data-mn="Гулмайра Аким ба Асылмурагийн түүх" data-en="Gulmaira Akim & the Story of Asylmura">Гулмайра Аким ба Асылмурагийн түүх</h2>
+      <p data-mn="Гулмайра Аким бол Асылмура брэндийн хамтран үүсгэн байгуулагч, уран бүтээлч юм. 2007 оноос хойш Асылмура нь казах үндэсний гар урлал, уламжлалт хээ угалз, соёлын өвийг хүмүүст хүргэж ирсэн. Түүний бүтээлч ажил, туршлага нь энэхүү өвийг Монгол даяар болон бусад орны зочдод танилцуулахад хувь нэмэр оруулдаг." data-en="Gulmaira Akim is an artist and co-founder of Asylmura. Since 2007, Asylmura has shared Kazakh craftsmanship, traditional patterns, and cultural heritage. Her creative work and experience help introduce this heritage to audiences across Mongolia and visitors from abroad.">Гулмайра Аким бол Асылмура брэндийн хамтран үүсгэн байгуулагч, уран бүтээлч юм. 2007 оноос хойш Асылмура нь казах үндэсний гар урлал, уламжлалт хээ угалз, соёлын өвийг хүмүүст хүргэж ирсэн. Түүний бүтээлч ажил, туршлага нь энэхүү өвийг Монгол даяар болон бусад орны зочдод танилцуулахад хувь нэмэр оруулдаг.</p>
+      <div class="actions">
+        <a class="btn dark" href="https://www.facebook.com/profile.php?id=100076219691285" target="_blank" rel="noopener noreferrer">Asylmura Facebook</a>
+        <a class="btn" href="https://www.instagram.com/asylmura_mongolia/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+    <div class="panel" style="padding:0;overflow:hidden">
+      <img src="assets/asylmura/gulmaira.jpg" alt="Gulmaira Akim, co-founder of Asylmura" loading="lazy" style="display:block;width:100%;max-height:470px;object-fit:cover">
+    </div>
+  </div>
+</section>
+
+<section id="asylmura-products">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag" data-mn="Асылмурагийн урлал" data-en="Asylmura Craft">Асылмурагийн урлал</span>
+      <h2 data-mn="Уламжлал шингэсэн бүтээлүүд" data-en="Crafts Rooted in Tradition">Уламжлал шингэсэн бүтээлүүд</h2>
+      <p data-mn="Казах хээ угалз, өнгө, гар урлалын өвийг шингээсэн бүтээгдэхүүнүүдтэй танилцаарай." data-en="Discover products inspired by Kazakh patterns, colors, and traditional craftsmanship.">Казах хээ угалз, өнгө, гар урлалын өвийг шингээсэн бүтээгдэхүүнүүдтэй танилцаарай.</p>
+    </div>
+    <div class="product-grid">
+      <article class="product-card">
+        <img loading="lazy" src="assets/asylmura/asylmura (1).jpg" alt="Asylmura уламжлалт хээтэй хатгамал">
+        <div class="card-body"><h3 data-mn="Хатгамал, цүнх" data-en="Embroidery and Bags">Хатгамал, цүнх</h3><p data-mn="Казах уламжлалт хээ угалз, өнгөний зохицол бүхий гар урлал." data-en="Handcrafted pieces featuring traditional Kazakh motifs and colors.">Казах уламжлалт хээ угалз, өнгөний зохицол бүхий гар урлал.</p></div>
+      </article>
+      <article class="product-card">
+        <img loading="lazy" src="assets/asylmura/asylmura (4).jpg" alt="Asylmura хатгамалтай орны хэрэглэл">
+        <div class="card-body"><h3 data-mn="Орны хэрэглэл" data-en="Bedding and Textiles">Орны хэрэглэл</h3><p data-mn="Гэр орныг чимэх уламжлалт хээтэй нэхмэл, хатгамал бүтээлүүд." data-en="Traditional embroidered textiles and decorative bedding pieces.">Гэр орныг чимэх уламжлалт хээтэй нэхмэл, хатгамал бүтээлүүд.</p></div>
+      </article>
+      <article class="product-card">
+        <img loading="lazy" src="assets/asylmura/asylmura (5).jpg" alt="Asylmura уламжлалт дугуй хээтэй чимэглэл">
+        <div class="card-body"><h3 data-mn="Чимэглэл, бэлэг дурсгал" data-en="Decor and Gifts">Чимэглэл, бэлэг дурсгал</h3><p data-mn="Уламжлалт урлалын өнгө төрхийг харуулсан онцгой бүтээлүүд." data-en="Distinctive pieces showcasing the character of traditional craft.">Уламжлалт урлалын өнгө төрхийг харуулсан онцгой бүтээлүүд.</p></div>
+      </article>
+      <article class="product-card">
+        <img loading="lazy" src="assets/asylmura/asylmura (2).jpg" alt="Asylmura брэндийн бүтээгдэхүүний танилцуулга">
+        <div class="card-body"><h3 data-mn="Брэндийн өв" data-en="The Brand Heritage">Брэндийн өв</h3><p data-mn="Асылмурагийн брэндийн таних тэмдэг, бүтээгдэхүүний өнгө төрх." data-en="A closer look at Asylmura's brand identity and product style.">Асылмурагийн брэндийн таних тэмдэг, бүтээгдэхүүний өнгө төрх.</p></div>
+      </article>
+      <article class="product-card">
+        <img loading="lazy" src="assets/asylmura/asylmura (6).jpg" alt="Asylmura хатгамалтай жижиг бүтээгдэхүүнүүд">
+        <div class="card-body"><h3 data-mn="Гар урлалын бүтээлүүд" data-en="Handmade Pieces">Гар урлалын бүтээлүүд</h3><p data-mn="Өдөр тутмын хэрэглээ болон бэлэглэхэд зориулсан бүтээлүүд." data-en="Handmade items for everyday use and thoughtful gifts.">Өдөр тутмын хэрэглээ болон бэлэглэхэд зориулсан бүтээлүүд.</p></div>
+      </article>
+      <article class="product-card">
+        <img loading="lazy" src="assets/asylmura/asylmura (3).jpg" alt="Asylmura уламжлалт хээ угалзтай текстиль">
+        <div class="card-body"><h3 data-mn="Соёлын өв" data-en="Cultural Heritage">Соёлын өв</h3><p data-mn="Үеэс үед уламжлагдсан хээ, урлалын уламжлалыг хадгалсан бүтээлүүд." data-en="Pieces that preserve motifs and craft traditions passed through generations.">Үеэс үед уламжлагдсан хээ, урлалын уламжлалыг хадгалсан бүтээлүүд.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap social-panel">
+    <div>
+      <span class="tag" data-mn="Бидэнтэй холбогдох" data-en="Connect with Us">Бидэнтэй холбогдох</span>
+      <h2 data-mn="Асылмурагийн түүхийг үргэлжлүүлэн сонирхоорой" data-en="Discover More of Asylmura's Story">Асылмурагийн түүхийг үргэлжлүүлэн сонирхоорой</h2>
+      <p class="muted" data-mn="Facebook хуудсанд бүтээгдэхүүний зураг, үйл ажиллагаа болон шинэ мэдээллүүд нийтлэгддэг. Шууд холбогдох бол 8802 6686 дугаарт залгаарай." data-en="Visit our Facebook page for product photos, activities, and updates. Call 8802 6686 to contact Asylmura directly.">Facebook хуудсанд бүтээгдэхүүний зураг, үйл ажиллагаа болон шинэ мэдээллүүд нийтлэгддэг. Шууд холбогдох бол 8802 6686 дугаарт залгаарай.</p>
+    </div>
+    <div class="actions">
+      <a class="btn dark" href="https://www.facebook.com/profile.php?id=100076219691285" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a class="btn" href="https://www.instagram.com/asylmura_mongolia/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a class="btn" href="tel:88026686">8802 6686</a>
+    </div>
+  </div>
+</section>
+</main><footer><div class="wrap footer-row"><span>© <span id="year"></span> Tolbo Travel</span><div class="footer-links"><a href="tours.html">Tours</a><a href="visitor-form.html">Visitor Registration</a><a href="asylmura.html">Asylmura</a><a href="eagle-clan.html">Eagle Clan</a></div></div></footer><script>
+
+let lang='mn';const langBtn=document.getElementById('langBtn');
+
+function setLang(next){lang=next;document.documentElement.lang=lang;document.querySelectorAll('[data-mn][data-en]').forEach(el=>{el.textContent=el.dataset[lang]});const toggle=document.getElementById('menuToggle');if(toggle)toggle.textContent=lang==='mn'?'Цэс ☰':'Menu ☰';if(langBtn)langBtn.textContent=lang==='mn'?'EN':'MN';const title=document.querySelector('meta[name="page-title-en"]');document.title=lang==='mn'?'Асылмура | Толбо Трэвэл':'Asylmura | Tolbo Travel';}
+
+if(langBtn)langBtn.addEventListener('click',()=>setLang(lang==='mn'?'en':'mn'));
+
+const toggle=document.getElementById('menuToggle'),navEl=document.getElementById('mainNav');if(toggle&&navEl){toggle.addEventListener('click',()=>{const open=navEl.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});navEl.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navEl.classList.remove('open');toggle.setAttribute('aria-expanded','false');}));}
+
+const year=document.getElementById('year');if(year)year.textContent=new Date().getFullYear();
+
+</script></body></html>
